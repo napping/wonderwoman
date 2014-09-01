@@ -1,0 +1,22 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   '-g',
+1 verbose cli   'version',
+1 verbose cli   'generator-backbone' ]
+2 info using npm@1.4.14
+3 info using node@v0.10.29
+4 error version No package.json found
+5 error Error: ENOENT, open '/Users/Zack/wonderwoman/package.json'
+6 error If you need help, you may report this *entire* log,
+6 error including the npm and node versions, at:
+6 error     <http://github.com/npm/npm/issues>
+7 error System Darwin 13.3.0
+8 error command "node" "/usr/local/bin/npm" "-g" "version" "generator-backbone"
+9 error cwd /Users/Zack/wonderwoman
+10 error node -v v0.10.29
+11 error npm -v 1.4.14
+12 error path /Users/Zack/wonderwoman/package.json
+13 error code ENOENT
+14 error errno 34
+15 verbose exit [ 34, true ]
