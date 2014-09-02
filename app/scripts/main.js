@@ -17,7 +17,7 @@ require.config({
 });
 
 require([
-    'backbone'
-], function (Backbone) {
-    Backbone.history.start();
+    'app'
+], function (app) {
+	app.start();
 });
