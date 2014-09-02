@@ -2,7 +2,7 @@ define([
 	"jquery",
 	"underscore",
 	"backbone",
-	"vent",			// event aggregator
+	"events",			// event aggregator
 
 	], function ( $, _, Backbone, vent ) { 
 		var Professor = Backbone.Model.extend({ 
