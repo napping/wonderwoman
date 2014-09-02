@@ -32,6 +32,7 @@
                 <div class="navbar-header">
                   <form class="navbar-form navbar-left" role="search">
                     <div class="form-group">
+                      <i class="fa fa-search"></i>
                       <input type="text" class="form-control" placeholder="Search courses, departments, and professors">
                     </div>
                   </form>
@@ -42,6 +43,16 @@
             <!-- Sidebar -->
             <div class="col-lg-3 sidebar">
               <div class="sidebar-label">Type</div>
+              <div class="sidebar-control">
+                <form action="">
+                  <input id="type-courses" type="checkbox" name="type" value="Courses" checked>
+                  <label for="courses">Courses</label>
+                  <input id="type-departments" type="checkbox" name="type" value="Departments">
+                  <label for="departments">Departments</label>
+                  <input id="type-professors" type="checkbox" name="type" value="Professors">
+                  <label for="professors">Professors</label>
+                </form>
+              </div>
               <div class="sidebar-label">Overall</div>
               <div class="sidebar-control">
                 <b>0</b>
@@ -55,6 +66,16 @@
               </div>
 
               <div class="sidebar-label">Difficulty</div>
+              <div class="sidebar-control">
+                <b>0</b>
+                <input id=control-difficulty type="text" value="" data-slider-min="0" data-slider-max="4" data-slider-step="0.1" data-slider-value="[0,4]"/>
+                <b>4</b>
+
+                <!-- Obviously factor out into some kind of Backbone component -->
+                <script>
+                  var slider = new Slider('#control-difficulty', {});
+                </script>
+              </div>
             </div>
 
             <!-- Search results -->

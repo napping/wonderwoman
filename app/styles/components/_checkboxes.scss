@@ -1,0 +1,18 @@
+[type=checkbox] {
+    display: none;
+}
+
+[type=checkbox] + label:before {
+    content: "\f10c";
+    font-family: FontAwesome;
+    margin-right: 10px;
+}
+
+[type=checkbox]:checked + label:before {
+    content: "\f111";
+    font-family: FontAwesome;
+}
+
+[type=checkbox]:checked + label {
+  color: $green;
+}
