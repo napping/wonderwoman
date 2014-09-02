@@ -14,7 +14,10 @@ $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 @import 'base/typography';
 
 // Sections
-@import 'sections/home';
+@import 'sections/header';
+@import 'sections/sidebar';
+@import 'sections/results';
+@import 'sections/footer';
 
 // Components
 @import 'components/buttons';

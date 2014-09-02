@@ -1,0 +1,28 @@
+.header {
+
+  .navbar {
+    background: $header-bkg;
+    border: none;
+
+    .navbar-form {
+      margin: 0;
+      padding: 0;
+
+      input {
+        background: transparent;
+        border: none;
+        @include border-radius(0);
+        @include box-shadow(0, 0, 0, 0);
+        color: #333;
+        font-size: 16px;
+        font-weight: 300;
+        height: 58px;
+        width: 600px;
+
+        &:focus {
+          @include box-shadow(0, 0, 0, 0);
+        }
+      }
+    }
+  }
+}
