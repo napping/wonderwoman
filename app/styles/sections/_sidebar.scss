@@ -1,3 +1,23 @@
 .sidebar {
   height: 500px;
+  padding-top: 20px;
+
+  .sidebar-label {
+    color: #999;
+    font-size: 13px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+
+  .sidebar-control {
+    margin-bottom: 20px;
+
+    b {
+      color: #999;
+      font-size: 13px;
+      font-weight: 500;
+      margin: 5px;
+    }
+  }
 }

@@ -13,6 +13,9 @@
         <!-- build:js scripts/vendor/modernizr.js -->
         <script src="bower_components/modernizr/modernizr.js"></script>
         <!-- endbuild -->
+        <!-- build:js scripts/vendor/bootstrap-slider.js -->
+        <script src="bower_components/seiyria-bootstrap-slider/dist/bootstrap-slider.min.js"></script>
+        <!-- endbuild -->
     </head>
     <body>
         <!--[if lt IE 10]>
@@ -38,7 +41,20 @@
 
             <!-- Sidebar -->
             <div class="col-lg-3 sidebar">
-              Sidebar
+              <div class="sidebar-label">Type</div>
+              <div class="sidebar-label">Overall</div>
+              <div class="sidebar-control">
+                <b>0</b>
+                <input id=control-overall type="text" value="" data-slider-min="0" data-slider-max="4" data-slider-step="0.1" data-slider-value="[0,4]"/>
+                <b>4</b>
+
+                <!-- Obviously factor out into some kind of Backbone component -->
+                <script>
+                  var slider = new Slider('#control-overall', {});
+                </script>
+              </div>
+
+              <div class="sidebar-label">Difficulty</div>
             </div>
 
             <!-- Search results -->

@@ -1,0 +1,15 @@
+.slider {
+
+  .slider-track {
+    background: #ddd;
+    border: none;
+
+    .slider-selection {
+      background: $green;
+    }
+
+    .slider-handle {
+      display: none;
+    }
+  }
+}

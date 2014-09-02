@@ -1,0 +1,12 @@
+.tooltip {
+
+  .tooltip-arrow {
+    border-top-color: #222 !important;
+  }
+
+  .tooltip-inner {
+    background: #222;
+    @include border-radius(0);
+    padding: 5px 10px;
+  }
+}
