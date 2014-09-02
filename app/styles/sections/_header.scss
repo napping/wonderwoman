@@ -1,8 +1,10 @@
 .header {
+  background: $header-bkg;
 
   .navbar {
     background: $header-bkg;
     border: none;
+    margin: 0;
 
     .navbar-form {
       margin: 0;
